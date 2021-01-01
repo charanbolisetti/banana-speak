@@ -29,21 +29,23 @@
         }
         .navigation {
             background-color: yellow;
+            width: auto;
             color:black;
             text-align: center;
-            width: auto;
-            height: 13vh;
+            width: auto%;
+            height: 10vh;
             padding: 1rem;
         }
 
         .textalign {
-            padding-top: 2rem;
+            padding-top: 1rem;
             font-size: x-large;
             font-weight: bold;
+            
         }
         
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: cursive;
             margin: 0;
         }
 
@@ -62,6 +64,25 @@
             max-width: 600px;
         }
 
+        .footer {
+            background-color: yellow;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+        }
+
+
+        textarea {
+            background-color: rgb(165, 236, 22);
+            font-size: large;
+        }
+
+        #output{
+            background-color:  rgb(165, 236, 22);
+        }
+
     </style>
 </head>
 
@@ -69,7 +90,6 @@
     <nav class="navigation">
         <div class="textalign">banana speak</div>
     </nav>
-
 
     <main>
         <textarea id="txt-input" placeholder="keep your sentence here it will convert into banana"></textarea>
@@ -80,8 +100,9 @@
 
     </main>
 
-    <footer class="navigation">
-        
+    <footer class="footer">
+        <div style="font-weight: bold;">about</div>
+        <p>the Minions language is mostly unintelligible or barely intelligible talking with some<br> words from the Spanish,French, Italian, Filipino, and other foreign languages.</p>
     </footer>
 
     <script src="app.js" type="text/javascript"></script>
